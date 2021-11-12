@@ -87,15 +87,17 @@ Seleccionar un opción del menú:\n
     2)Naranja [Na]
     3)Amarillo [Am]
     4)Verde [Ve]
-    5)Azul [Az]
-    6)Violeta [Vi]
-    7)Control manual [Cm]
-    8)Salir [Sa]
+    5)Turquesa [Tu]
+    6)Azul [Az1]
+    7)Azul [Az2]
+    8)Violeta [Vi]
+    9)Control manual [Cm]
+    10)Salir [Sa]
     \nOpción seleccionada:   """)
 
     #A cada color le va a corresponder una posición en cantidad de pasos desde la posición inicial
     if selection == "Ro":
-        position = +50 #valor de prueba hay que calibrar!
+        position = 0 #valor de prueba hay que calibrar!
 
         #Movemos el motor y una actualizamos la posición del motor
         n_step_taken = mover(position,n_step_taken)
@@ -104,7 +106,7 @@ Seleccionar un opción del menú:\n
         wait()
 
     elif selection == "Na":
-        position = +60  # valor de prueba hay que calibrar!
+        position = +15  # valor de prueba hay que calibrar!
 
         # Movemos el motor y una actualizamos la posición del motor
         n_step_taken = mover(position, n_step_taken)
@@ -113,7 +115,7 @@ Seleccionar un opción del menú:\n
         wait()
 
     elif selection == "Am":
-        position = +70  # valor de prueba hay que calibrar!
+        position = +23  # valor de prueba hay que calibrar!
 
         # Movemos el motor y una actualizamos la posición del motor
         n_step_taken = mover(position, n_step_taken)
@@ -122,25 +124,43 @@ Seleccionar un opción del menú:\n
         wait()
 
     elif selection == "Ve":
-        position = +80  # valor de prueba hay que calibrar!
+        position = +33  # valor de prueba hay que calibrar!
 
         # Movemos el motor y una actualizamos la posición del motor
         n_step_taken = mover(position, n_step_taken)
 
         # Esperamos a que el usuario quiera otro color, modo manual o salir
         wait()
-
-    elif selection == "Az":
-        position = +90  # valor de prueba hay que calibrar!
+    
+    elif selection == "Tu":
+        position = +43  # valor de prueba hay que calibrar!
 
         # Movemos el motor y una actualizamos la posición del motor
         n_step_taken = mover(position, n_step_taken)
 
         # Esperamos a que el usuario quiera otro color, modo manual o salir
         wait()
+        
+    elif selection == "Az1":
+        position = +53  # valor de prueba hay que calibrar!
 
+        # Movemos el motor y una actualizamos la posición del motor
+        n_step_taken = mover(position, n_step_taken)
+
+        # Esperamos a que el usuario quiera otro color, modo manual o salir
+        wait()
+        
+    elif selection == "Az1":
+        position = +63  # valor de prueba hay que calibrar!
+
+        # Movemos el motor y una actualizamos la posición del motor
+        n_step_taken = mover(position, n_step_taken)
+
+        # Esperamos a que el usuario quiera otro color, modo manual o salir
+        wait()
+        
     elif selection == "Vi":
-        position = +100  # valor de prueba hay que calibrar!
+        position = +69  # valor de prueba hay que calibrar!
 
         # Movemos el motor y una actualizamos la posición del motor
         n_step_taken = mover(position, n_step_taken)
